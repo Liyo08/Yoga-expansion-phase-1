@@ -1,0 +1,125 @@
+/* ===================================== */
+/*         ZenTracker Page Styling       */
+/* ===================================== */
+
+/* Smooth Page Fade-In */
+body {
+    animation: fadeInPage 1s ease-in-out;
+  }
+  
+  .tracker-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: url('') no-repeat center center/cover;
+    text-align: center;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: slideUp 1s ease-in-out forwards 0.3s;
+  }
+  
+  /* Heading Animation - Enters from Left */
+  .tracker-container h1 {
+    font-size: 28px;
+    color: #000000;
+    background: rgba(0, 0, 0, 0);
+    padding: 10px 20px;
+    border-radius: 8px;
+    opacity: 0;
+    transform: translateX(-50px);
+    animation: slideFromLeft 1s ease-in-out forwards 0.5s;
+  }
+  
+  /* Tracker Cards - Enter from Alternating Sides */
+  .tracker-card {
+    background: rgb(255, 255, 255);
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 10px rgb(41, 41, 41);
+    margin: 15px;
+    width: 300px;
+    opacity: 0;
+    animation: glowEffect 2s infinite alternate;
+  }
+  @keyframes glowEffect {
+    0% { box-shadow: 0px 0px 10px rgb(0, 238, 255); }
+    50% { box-shadow: 0px 0px 20px rgb(0, 255, 251); }
+    100% { box-shadow: 0px 0px 10px rgb(5, 255, 251); }
+  }
+  
+  /* First Card - Enters from Left */
+  .tracker-card:nth-of-type(1) {
+    transform: translateX(-50px);
+    animation: slideFromLeft 1s ease-in-out forwards 0.7s;
+  }
+  
+  /* Second Card - Enters from Right */
+  .tracker-card:nth-of-type(2) {
+    transform: translateX(50px);
+    animation: slideFromRight 1s ease-in-out forwards 0.9s;
+  }
+  
+  /* Third Card - Enters from Bottom */
+  .tracker-card:nth-of-type(3) {
+    transform: translateY(50px);
+    animation: slideFromBottom 1s ease-in-out forwards 1.1s;
+  }
+  
+  /* Back Button - Enters from Bottom */
+  .btn-back {
+    position:absolute;
+    top: 20px;
+    right: 20px;
+    background: #08003c;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    display: inline-block;
+    transition: 0.3s;
+    opacity: 0;
+    transform: translateY(30px);
+    animation: slideFromBottom 1s ease-in-out forwards 1.3s;
+  }
+  
+  /* Hover Effect */
+  .btn-back:hover {
+    background: #ffee06;
+  }
+  
+  /* ============================= */
+  /*         Animations            */
+  /* ============================= */
+  
+  /* Full Page Fade-In */
+  @keyframes fadeInPage {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  
+  /* Slide Up Effect */
+  @keyframes slideUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  
+  /* Slide in from Left */
+  @keyframes slideFromLeft {
+    from { opacity: 0; transform: translateX(-50px); }
+    to { opacity: 1; transform: translateX(0); }
+  }
+  
+  /* Slide in from Right */
+  @keyframes slideFromRight {
+    from { opacity: 0; transform: translateX(50px); }
+    to { opacity: 1; transform: translateX(0); }
+  }
+  
+  /* Slide in from Bottom */
+  @keyframes slideFromBottom {
+    from { opacity: 0; transform: translateY(50px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  

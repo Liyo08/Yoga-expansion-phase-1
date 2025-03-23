@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+   <html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+      <!--=============== REMIXICONS ===============-->
+      <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
+
+      <!--=============== CSS ===============-->
+      <link rel="stylesheet" href="assets/css/styles.css">
+
+      <title>Zenalign &mdash; Difficulty level</title>
+      <style>
+         /* Keyframes for animations */
+         @keyframes slideFromLeft {
+             from {
+                 transform: translateX(-100px);
+                 opacity: 0;
+             }
+             to {
+                 transform: translateX(0);
+                 opacity: 1;
+             }
+         }
+         
+         @keyframes dropFromTop {
+             from {
+                 transform: translateY(-50px);
+                 opacity: 0;
+             }
+             to {
+                 transform: translateY(0);
+                 opacity: 1;
+             }
+         }
+         
+         /* Navbar styling */
+         .navbar {
+             background-color: black;
+             color: white;
+             display: flex;
+             justify-content: space-between;
+             align-items: center;
+             padding: 25px 30px;
+             height:80px;
+             font-family: 'Poppins', sans-serif;
+             position: fixed;
+             width: 100%;
+             top: 0;
+             left: 0;
+             z-index: 1000;
+             box-shadow: 0px 3px 5px rgba(255, 255, 255, 0.1);
+         }
+         
+         /* Animate logo from left */
+         .navbar .logo {
+             font-size: 24px;
+             font-weight: bold;
+             letter-spacing: 2px;
+             transition: color 0.3s ease;
+             opacity: 0; /* Initially hidden */
+             animation: slideFromLeft 1s ease-out forwards;
+         }
+         
+         /* Navigation Links */
+         .navbar .nav-links {
+             display: flex;
+             gap: 20px;
+         }
+         
+         /* Animate nav links from top */
+         .navbar .nav-links a {
+             text-decoration: none;
+             color: white;
+             font-size: 15px;
+             font-weight: bold;
+             transition: color 0.3s ease, transform 0.2s;
+             opacity: 0; /* Initially hidden */
+             animation: dropFromTop 0.8s ease-out forwards;
+         }
+         
+         /* Add delay to each nav link for a staggered effect */
+         .navbar .nav-links a:nth-child(1) {
+             animation-delay: 0.2s;
+         }
+         .navbar .nav-links a:nth-child(2) {
+             animation-delay: 0.4s;
+         }
+         .navbar .nav-links a:nth-child(3) {
+             animation-delay: 0.6s;
+         }
+         
+         /* Hover Effects */
+         .navbar .nav-links a:hover {
+             color: yellow;
+             transform: scale(1.1);
+         }
+         
+              </style>
+   </head>
+   <body>
+       <!-- Navbar -->
+    <nav class="navbar">
+      <div class="logo">Zenalign</div>
+      <div class="nav-links">
+         <a href="C:\Users\Liyo Tom\Documents\Leo\Materials\S6\Mini Prjct\Yoga Test 19(5,12)extension\Yoga Kids Module\tech-index.html">KIDS</a>
+         <a href="C:\Users\Liyo Tom\Documents\Leo\Materials\S6\Mini Prjct\Yoga Test 19(5,12)extension\Diet entry page\index.html">DIET</a>
+         <a href="C:\Users\Liyo Tom\Documents\Leo\Materials\S6\Mini Prjct\Yoga Test 19(5,12)extension\Mediation entry\index.html">MEDITATION</a>
+         <a href="C:\Users\Liyo Tom\Documents\Leo\Materials\S6\Mini Prjct\Yoga Test 19(5,12)extension\Entry Page\index1.html">BACK</a>
+      </div>
+  </nav>
+      <div class="container">
+         <div class="card__container">
+            <article class="card__article">
+               <div class="card__scale-1"></div>
+               <div class="card__scale-2"></div>
+
+               <div class="card__shape-1">
+                  <div class="card__shape-2"></div>
+                  <div class="card__shape-3">
+                     <i class="ri-flashlight-line card__icon"></i>
+                  </div>
+               </div>
+   
+               <div class="card__data">
+                  <h2 class="card__title">Advanced</h2>
+                  
+                  <p class="card__description">
+                     Intense yoga practice for strength, flexibility, and endurance.
+                  </p>
+
+                  <a href="C:\Users\Liyo Tom\Documents\Leo\Materials\S6\Mini Prjct\Yoga Test 19(5,12)extension\Yoga Advanced Module\tech-index.html" class="card__button">
+                     Get Started
+                  </a>
+               </div>
+            </article>
+   
+            <article class="card__article card__orange">
+               <div class="card__scale-1"></div>
+               <div class="card__scale-2"></div>
+
+               <div class="card__shape-1">
+                  <div class="card__shape-2"></div>
+                  <div class="card__shape-3">
+                     <i class="ri-fire-line card__icon"></i>
+                  </div>
+               </div>
+   
+               <div class="card__data">
+                  <h2 class="card__title">Intermediate</h2>
+
+                  <p class="card__description">
+                     Smooth yoga practice for resilience, endurance, balance, and tranquility.
+                  </p>
+
+                  <a href="C:\Users\Liyo Tom\Documents\Leo\Materials\S6\Mini Prjct\Yoga Test 19(5,12)extension\Yoga Intermediate Module\tech-index.html" class="card__button">
+                     Get Started
+                  </a>
+               </div>
+            </article>
+   
+            <article class="card__article card__green">
+               <div class="card__scale-1"></div>
+               <div class="card__scale-2"></div>
+
+               <div class="card__shape-1">
+                  <div class="card__shape-2"></div>
+                  <div class="card__shape-3">
+                     <i class="ri-shining-line card__icon"></i>
+                  </div>
+               </div>
+   
+               <div class="card__data">
+                  <h2 class="card__title">Beginner</h2>
+
+                  <p class="card__description">
+                     Gentle yoga practice for relaxation, joint mobility, and mental clarity.
+                  </p>
+
+                  <a href="C:\Users\Liyo Tom\Documents\Leo\Materials\S6\Mini Prjct\Yoga Test 19(5,12)extension\Yoga Beginner Module\tech-index.html" class="card__button">
+                     Get Started
+                  </a>
+               </div>
+            </article>
+         </div>
+      </div>
+   </body>
+</html>

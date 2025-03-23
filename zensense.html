@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZenSense - Yoga Pose Detection</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script defer src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/@tensorflow-models/pose-detection"></script>
+    <script defer src="js/poseDetection.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>🧘 ZenSense - Yoga Pose Detection</h1>
+        <button id="startButton">Start</button>
+        <button id="stopButton" style="display: none;">Stop</button>
+        <div class="video-container">
+            <video id="video" autoplay playsinline></video>
+            <canvas id="canvas"></canvas>
+        </div>
+        <div id="poseResult">Press "Start" to begin detection.</div>
+    </div>
+    <a href="index.html" class="btn-back">Back to Home</a>
+
+    <script src="js/tracking.js"></script>
+</body>
+</html>

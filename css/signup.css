@@ -1,0 +1,153 @@
+/* ===================================== */
+/*         Neon Styled Sign Up Page      */
+/* ===================================== */
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+    animation: neonBackground 10s infinite alternate, fadeInPage 1s ease-in-out;
+}
+
+
+@keyframes fadeInPage {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+
+/* Neon Background Animation */
+@keyframes neonBackground {
+    0% { background: linear-gradient(135deg, #000520, #000520, #000520); }
+    100% { background: linear-gradient(135deg, #000520, #000520, #000520); }
+}
+
+.signup-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.signup-box {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 40px;
+    border-radius: 12px;
+    backdrop-filter: blur(20px);
+    text-align: center;
+    box-shadow: 0px 0px 20px rgba(0, 255, 255, 0.5);
+    width: 350px;
+    transform: scale(0.9);
+    animation: floatEffect 3s infinite ease-in-out;
+    border: 2px solid rgba(0, 255, 255, 0.3);
+}
+
+/* Floating Form Effect */
+@keyframes floatEffect {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-5px); }
+    100% { transform: translateY(0px); }
+}
+
+.signup-box h2 {
+    margin: 0;
+    font-size: 28px;
+    color: #00ffff;
+    text-shadow: 0px 0px 10px rgba(0, 255, 255, 0.8);
+}
+
+.signup-box p {
+    color: #dcdcdc;
+    margin-bottom: 20px;
+}
+
+/* Input Fields */
+.input-field {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.input-field input {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid transparent;
+    background: rgba(0, 255, 255, 0.1);
+    border-radius: 5px;
+    color: white;
+    font-size: 16px;
+    outline: none;
+    transition: 0.4s;
+    box-shadow: 0px 0px 5px transparent;
+}
+
+/* Neon Glow Effect on Inputs */
+.input-field input:focus {
+    border-color: #00ffff;
+    box-shadow: 0px 0px 15px rgba(0, 255, 255, 0.8);
+}
+
+/* Label Animation */
+.input-field label {
+    position: absolute;
+    top: 50%;
+    left: 12px;
+    transform: translateY(-50%);
+    color: #e0e0e0;
+    font-size: 14px;
+    transition: 0.3s;
+    pointer-events: none;
+}
+
+.input-field input:focus + label,
+.input-field input:valid + label {
+    top: 5px;
+    font-size: 12px;
+    color: #00ffff;
+    text-shadow: 0px 0px 5px rgba(0, 255, 255, 0.8);
+}
+
+/* Neon Button Effect */
+.btn-signup {
+    width: 100%;
+    padding: 12px;
+    background: transparent;
+    border: 2px solid #00ffff;
+    border-radius: 5px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.4s;
+    position: relative;
+    text-transform: uppercase;
+    box-shadow: 0px 0px 15px rgba(0, 255, 255, 0.5);
+}
+
+.btn-signup:hover {
+    background: rgba(0, 255, 255, 0.2);
+    box-shadow: 0px 0px 25px rgba(0, 255, 255, 0.9);
+    transform: scale(1.05);
+}
+
+/* Sign-up Options Hover Effects */
+.signup-options p {
+    color: #dcdcdc;
+    font-size: 14px;
+}
+
+.signup-options a {
+    color: #00ffff;
+    font-size: 14px;
+    text-decoration: none;
+    transition: 0.3s;
+    text-shadow: 0px 0px 5px rgba(0, 255, 255, 0.7);
+}
+
+.signup-options a:hover {
+    color: #00ffcc;
+}

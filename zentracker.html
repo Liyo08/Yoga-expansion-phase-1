@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZenTracker - Usage Statistics</title>
+    <link rel="stylesheet" href="css/zentracker.css">
+</head>
+<body>
+
+    <div class="tracker-container">
+        <h1>📊 ZenTracker - Your Activity</h1>
+
+        <div class="tracker-card">
+            <h2>Total Time Spent on Website</h2>
+            <p id="total-time">Loading...</p>
+        </div>
+
+        <div class="tracker-card">
+            <h2>Time Spent on ZenSense</h2>
+            <p id="zensense-time">Loading...</p>
+        </div>
+
+        <div class="tracker-card">
+            <h2>Time Spent on ZenFit</h2>
+            <p id="zenfit-time">Loading...</p>
+        </div>
+
+        <a href="index.html" class="btn-back">Back to Home</a>
+    </div>
+
+    <script src="js/tracking.js"></script>
+</body>
+</html>
+
+
+
+
+
+<!--  Signup
+ <script>
+    document.getElementById("signupForm").addEventListener("submit", function (event) {
+        event.preventDefault();
+        const fullName = document.getElementById("fullName").value;
+        const email = document.getElementById("email").value;
+        const password = document.getElementById("password").value;
+        const confirmPassword = document.getElementById("confirmPassword").value;
+        
+        if (password !== confirmPassword) {
+            alert("Passwords do not match!");
+            return;
+        }
+        
+        const user = { fullName, email, password };
+        localStorage.setItem("user", JSON.stringify(user));
+        alert("Sign up successful! You can now sign in.");
+        window.location.href = "signin.html";
+    });
+</script>
+
+
+
+Signin
+
+<script>
+        document.getElementById("signinForm").addEventListener("submit", function (event) {
+            event.preventDefault();
+            const email = document.getElementById("email").value;
+            const password = document.getElementById("password").value;
+            const storedUser = JSON.parse(localStorage.getItem("user"));
+
+            if (storedUser && storedUser.email === email && storedUser.password === password) {
+                alert("Sign in successful!");
+                localStorage.setItem("loggedIn", "true");
+                window.location.href = "index.html";
+            } else {
+                alert("Invalid email or password!");
+            }
+        });
+    </script>
+-->

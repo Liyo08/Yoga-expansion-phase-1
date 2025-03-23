@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="css/signup.css"> 
+</head>
+<body>
+    <div class="signup-wrapper">
+        <div class="signup-box">
+            <h2>Sign Up</h2>
+            <p>Create your account to get started.</p>
+
+            <form id="signupForm">
+                <div class="input-field">
+                    <input type="text" id="fullName" required>
+                    <label>Full Name</label>
+                </div>
+                <div class="input-field">
+                    <input type="email" id="email" required>
+                    <label>Email</label>
+                </div>
+                <div class="input-field">
+                    <input type="password" id="password" required>
+                    <label>Password</label>
+                </div>
+                <div class="input-field">
+                    <input type="password" id="confirmPassword" required>
+                    <label>Confirm Password</label>
+                </div>
+                <button type="submit" class="btn-signup">Sign Up</button>
+                <div class="signup-options">
+                    <p>Already have an account? <a href="signin.html">Sign In</a></p>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById("signupForm").addEventListener("submit", function (event) {
+            event.preventDefault();
+            const fullName = document.getElementById("fullName").value;
+            const email = document.getElementById("email").value;
+            const password = document.getElementById("password").value;
+            const confirmPassword = document.getElementById("confirmPassword").value;
+            
+            if (password !== confirmPassword) {
+                alert("Passwords do not match!");
+                return;
+            }
+            
+            const user = { fullName, email, password };
+            localStorage.setItem("user", JSON.stringify(user));
+            alert("Sign up successful! You can now sign in.");
+            window.location.href = "signin.html";
+        });
+    </script>
+</body>
+</html>

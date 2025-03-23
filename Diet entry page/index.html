@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+   <!--=============== REMIXICONS ===============-->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css">
+   <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
+
+   <!--=============== CSS ===============-->
+   <link rel="stylesheet" href="assets/css/styles.css">
+
+   <title>Zenalign &mdash; Diet Goal</title>
+   <style>
+      /* Keyframes for animations */
+@keyframes slideFromLeft {
+    from {
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes dropFromTop {
+    from {
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Navbar styling */
+.navbar {
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 30px; /* Increased padding for more height */
+    height: 67.5px; /* Set a fixed height (adjust as needed) */
+    font-family: 'Poppins', sans-serif;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    box-shadow: 0px 3px 5px rgba(255, 255, 255, 0.1);
+}
+
+
+/* Animate logo from left */
+.navbar .logo {
+    font-size: 24px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    transition: color 0.3s ease;
+    opacity: 0; /* Initially hidden */
+    animation: slideFromLeft 1s ease-out forwards;
+}
+
+/* Navigation Links */
+.navbar .nav-links {
+    display: flex;
+    gap: 20px;
+}
+
+/* Animate nav links from top */
+.navbar .nav-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    transition: color 0.3s ease, transform 0.2s;
+    opacity: 0; /* Initially hidden */
+    animation: dropFromTop 0.8s ease-out forwards;
+}
+
+/* Add delay to each nav link for a staggered effect */
+.navbar .nav-links a:nth-child(1) {
+    animation-delay: 0.2s;
+}
+.navbar .nav-links a:nth-child(2) {
+    animation-delay: 0.4s;
+}
+.navbar .nav-links a:nth-child(3) {
+    animation-delay: 0.6s;
+}
+
+/* Hover Effects */
+.navbar .nav-links a:hover {
+    color: yellow;
+    transform: scale(1.1);
+}
+
+   </style>
+</head>
+
+<body>
+   <!-- Navbar -->
+   <nav class="navbar">
+      <div class="logo">Zenalign</div>
+      <div class="nav-links">
+         <a href="C:\Users\Liyo Tom\Documents\Leo\Materials\S6\Mini Prjct\Yoga Test 19(5,12)extension\Yoga Entry page\index.html">YOGA</a>
+         <a href="C:\Users\Liyo Tom\Documents\Leo\Materials\S6\Mini Prjct\Yoga Test 19(5,12)extension\Yoga Kids Module\tech-index.html">KIDS</a>
+         <a href="C:\Users\Liyo Tom\Documents\Leo\Materials\S6\Mini Prjct\Yoga Test 19(5,12)extension\Mediation entry\index.html">MEDITATION</a>
+         <a href="C:\Users\Liyo Tom\Documents\Leo\Materials\S6\Mini Prjct\Yoga Test 19(5,12)extension\Entry Page\index1.html">BACK</a>
+      </div>
+   </nav>
+   <section class="card">
+      <img src="assets/img/img-bg.jpg" alt="image" class="card__bg">
+      <div class="card__blur"></div>
+
+      <div class="card__container container">
+         <article class="card__article card-yellow">
+            <img src="assets/img/1.1.1.jpg" alt="image" class="card__img">
+            <div class="card__shadow"></div>
+
+            <div class="card__data">
+               <h2 class="card__name">GAIN</h2>
+               <span class="card__profession">Bulk up</span>
+            </div>
+
+            <div class="card__clip">
+               <i class="ri-menu-4-line"></i>
+            </div>
+
+            <div class="info">
+               <div class="info__data">
+                  <h2 class="info__name">Gain Weight</h2>
+                  <p class="info__description">
+                     Fuel your body with a high-calorie, nutrient-rich diet designed to promote healthy weight gain,
+                     build muscle, and boost strength with balanced nutrition.
+
+                  </p>
+                  <a href="C:\Users\Liyo Tom\Documents\Leo\Materials\S6\Mini Prjct\Yoga Test 19(5,12)extension\WeekDay Entry Gain\index.html" class="info__button">Lets Go</a>
+               </div>
+
+
+            </div>
+         </article>
+
+         <article class="card__article card-green">
+            <img src="assets/img/2.2.2.webp" alt="image" class="card__img">
+            <div class="card__shadow"></div>
+
+            <div class="card__data">
+               <h2 class="card__name">MAINTAIN</h2>
+               <span class="card__profession">Stay Balanced</span>
+            </div>
+
+            <div class="card__clip">
+               <i class="ri-menu-4-line"></i>
+            </div>
+
+            <div class="info">
+               <div class="info__data">
+                  <h2 class="info__name">Sustain Weight</h2>
+                  <p class="info__description">
+                     Maintain your ideal weight with a balanced diet that provides the right nutrients, supports energy
+                     levels, and keeps your body strong and healthy.
+                  </p>
+                  <a href="C:\Users\Liyo Tom\Documents\Leo\Materials\S6\Mini Prjct\Yoga Test 19(5,12)extension\WeekDay Entry Maintain\index.html" class="info__button">Lets Go</a>
+               </div>
+
+
+            </div>
+         </article>
+
+         <article class="card__article card-pink">
+            <img src="assets/img/3.jpg" alt="image" class="card__img">
+            <div class="card__shadow"></div>
+
+            <div class="card__data">
+               <h2 class="card__name">LOOSE</h2>
+               <span class="card__profession">Slim Down</span>
+            </div>
+
+            <div class="card__clip">
+               <i class="ri-menu-4-line"></i>
+            </div>
+
+            <div class="info">
+               <div class="info__data">
+                  <h2 class="info__name">Loose Weight</h2>
+                  <p class="info__description">
+                     Achieve your weight loss goals with a nutritious, calorie-controlled diet that promotes fat
+                     burning, boosts metabolism, and supports a healthy, sustainable lifestyle.
+                  </p>
+                  <a href="C:\Users\Liyo Tom\Documents\Leo\Materials\S6\Mini Prjct\Yoga Test 19(5,12)extension\WeekDay Entry Loose\index.html" class="info__button">Lets Go</a>
+               </div>
+
+
+            </div>
+         </article>
+      </div>
+   </section>
+</body>
+
+</html>

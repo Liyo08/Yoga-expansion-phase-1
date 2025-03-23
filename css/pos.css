@@ -1,0 +1,121 @@
+/* ===================================== */
+/*      Pose Detail Page Styling         */
+/* ===================================== */
+
+/* Smooth Page Fade-In */
+.pose-detail-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: url('') repeat, linear-gradient(135deg, #f5f5f5, #e0e0e0);
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInSlideUp 1s ease-out forwards;
+}
+
+/* Pose Card Modern Entry Animation */
+.pose-card-large {
+    background: rgb(255, 255, 255);
+    padding: 30px;
+    border-radius: 15px;
+    max-width: 600px;
+    text-align: center;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+    opacity: 0;
+    transform: scale(0.9);
+    animation: scaleIn 0.8s ease-out forwards 0.5s;
+}
+
+/* Pose Image */
+.pose-card-large img {
+    width: 100%;
+    border-radius: 10px;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInSlideUp 0.8s ease-out forwards 0.7s;
+}
+
+/* Back Button Modern Entry */
+/* Back Button Modern Entry */
+.btn-back {
+    position: absolute; /* Keeps it inside the container */
+    top: 10px;
+    right: 10px;
+    background: #030303;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    display: inline-block;
+    transition: 0.3s;
+    opacity: 0;
+    transform: translateY(-20px);
+    animation: fadeInSlideDown 0.8s ease-out forwards 1s;
+}
+
+/* Ensure the Container is Positioned Relatively */
+.pose-card-large {
+    position: relative; /* Ensures the button is placed inside it */
+    background: rgb(255, 255, 255);
+    padding: 30px;
+    border-radius: 15px;
+    max-width: 600px;
+    text-align: center;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+    opacity: 0;
+    transform: scale(0.9);
+    animation: scaleIn 0.8s ease-out forwards 0.5s;
+}
+
+/* Hover Effect */
+.btn-back:hover {
+    background: #fbff00;
+}
+
+
+/* ===================================== */
+/*       Animations                      */
+/* ===================================== */
+
+/* Page Fade-In & Slide Up */
+@keyframes fadeInSlideUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Scale-In Effect */
+@keyframes scaleIn {
+    from { opacity: 0; transform: scale(0.9); }
+    to { opacity: 1; transform: scale(1); }
+}
+
+/* Fade-In & Slide Down */
+@keyframes fadeInSlideDown {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* ===================================== */
+/*       Responsive Design Adjustments   */
+/* ===================================== */
+
+@media (max-width: 768px) {
+    .pose-grid {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .pose-card {
+        width: 90%;
+    }
+
+    .pose-detail-container {
+        padding: 20px;
+    }
+
+    .pose-card-large {
+        width: 90%;
+        padding: 20px;
+    }
+}
