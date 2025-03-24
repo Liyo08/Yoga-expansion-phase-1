@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+    <title>ZenAlign &mdash; Chat with us</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+       body {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 1.5s ease-out, transform 1.5s ease-out;
+    overflow: hidden; /* Hides scrollbar initially */
+}
+    </style>
+</head>
+<body>
+
+    <!-- Back to Home Button -->
+    <a href="C:\Users\Liyo Tom\Documents\Leo\Materials\S6\Mini Prjct\Yoga Test 19(5,12)extension\index.html" class="back-home-btn">Home</a>
+
+    <!-- Page Title -->
+    <h1 style="font-family: 'Montserrat', sans-serif;">ZenbotX &mdash; Expert Insights On Yoga Queries !</h1>
+
+    <!-- Chatbot Container -->
+    <div class="chat-container" id="chat-container">
+        <div class="message bot-message">Hi there! How can I help you today?</div>
+        <div id="chat-box"></div>
+    </div>
+
+    <!-- Typing Indicator -->
+    <div class="typing-indicator" id="typing-indicator">Bot is typing...</div>
+
+    <!-- User Input -->
+    <div class="input-container">
+        <input type="text" id="user-input" placeholder="Ask me anything about yoga...">
+        <button id="send-btn">Send</button>
+    </div>
+
+    <script src="script.js"></script>
+    <script>window.onload = function () {
+        document.body.style.opacity = "1";
+        document.body.style.transform = "translateY(0)";
+    };</script>
+</body>
+</html>

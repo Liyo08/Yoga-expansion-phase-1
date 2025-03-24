@@ -6,6 +6,15 @@
     <title>Zenalign &mdash; Meditation</title>
     <link href="https://fonts.googleapis.com/css2?family=Italiana&display=swap" rel="stylesheet">
     <style>
+		body {
+			opacity: 0;
+			transform: translateX(-50px); /* Shift from left instead of bottom */
+			transition: opacity 1s ease-out, transform 1s ease-out;
+			overflow: hidden; /* Hides scrollbar initially */
+		}
+	</style>
+    <style>
+        
         body {
             font-family: 'Cursive', sans-serif;
             text-align: center;
@@ -29,8 +38,9 @@
     margin-top: 10px;
     font-size: 1.2rem; /* Increased font size */
     font-style: italic;
-    color: #908f8f; /* White text for better contrast */
-    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7); /* Added a stronger text shadow for visibility */
+    color: #fff7f7; /* White text for better contrast */
+    text-shadow: 10px 10px 10px rgb(0, 0, 0); /* Added a stronger text shadow for visibility */
+    
 }
 
         .button-container {
@@ -63,7 +73,7 @@
         .meditation-button:hover {
             transform: translateY(-4px) scale(1.05);
             box-shadow: 0 8px 16px rgba(0, 0, 0, 0.6);
-            background: #FFB37A;
+            background: #eaff00;
             color: black;
         }
 
@@ -125,7 +135,7 @@
             left: 0;
             width: 100%;
             height: 100%;
-            background: rgba(0, 0, 0, 0.5); /* Dark overlay */
+            background: rgba(0, 0, 0, 0); /* Dark overlay */
             z-index: -1;
         }
 
@@ -192,11 +202,94 @@
             font-size: 1rem;
             padding-left: 10px;
         }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            text-align: center;
+            padding: 20px;
+            background: url('https://www.belwellness.com/wp-content/uploads/shutterstock_736687666.jpg') no-repeat center top fixed;
+            background-size: cover;
+            color: black;
+            overflow-y: auto;
+        }
+
+        /* Navbar Styling */
+        .navbar {
+            background: black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 15px 0;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+            height:60px;
+
+
+        }
+        .content {
+    padding-top: 100px;
+}
+
+        .navbar ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+
+        .navbar ul li {
+            display: inline;
+        }
+
+        .navbar ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.2rem;
+            font-weight: 500;
+            padding: 10px 15px;
+            transition: color 0.3s ease-in-out;
+        }
+
+        .navbar ul li a:hover {
+            color: yellow;
+        }
+
+        /* Adjust body padding to avoid content being hidden under the fixed navbar */
+        .top-right-btn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background-color: yellow;
+    color: black;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    border-radius: 5px;
+    text-decoration: none; 
+}
+
+.top-right-btn:hover {
+    background-color: black;
+    color: white;
+}
 
     </style>
 </head>
 <body>
-    <h1>Meditation</h1>
+    <a href="C:\Users\Liyo Tom\Documents\Leo\Materials\S6\Mini Prjct\Yoga Test 19(5,12)extension\Entry Page\index1.html" class="top-right-btn">Back</a>
+
+
+    <h1>Zen &mdash; Meditation</h1>
     <p class="quote">“You have power over your mind - not outside events. Realize this, and you will find strength.”<br>&mdash; Marcus Aurelius</p>
 
     <div class="button-container">
@@ -280,7 +373,11 @@
             </tr>
         </table>
     </div>
-
+    <script>window.onload = function () {
+        document.body.style.opacity = "1";
+        document.body.style.transform = "translateX(0)"; /* Moves content to normal position */
+    };
+    </script>
     <script>
 
         function hideAllSections() {
@@ -311,5 +408,7 @@ function toggleSession() {
 }
 
     </script>
+  
+    
 </body>
 </html>

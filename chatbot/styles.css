@@ -1,0 +1,119 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: #010107;
+}
+
+h1 {
+    text-align: center;
+    margin: 15px 0;
+    color: rgb(255, 255, 255);
+
+}
+
+
+/* Back to Home Button */
+.back-home-btn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background-color: #cfde01;
+    color: rgb(0, 0, 0);
+    padding: 08px 30px;
+    border-radius: 20px;
+    text-decoration: none;
+   /* font-weight: bold;*/
+    transition: 0.3s;
+}
+
+.back-home-btn:hover {
+    background-color: #ffffff;
+}
+
+.chat-container {
+    flex: 1;
+    border: 1px solid #ffffff;
+    border-radius: 20px;
+    padding: 15px;
+    overflow-y: auto;
+    background-color: #000000;
+    margin: 0 15px 15px 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.message {
+    padding: 8px 12px;
+    margin-bottom: 10px;
+    border-radius: 20px;
+    max-width: 70%;
+}
+
+.user-message {
+    background-color: #cfde01;
+    margin-left: auto;
+    border-bottom-right-radius: 5px;
+    color: #000000;
+}
+
+.bot-message {
+    background-color: #cfde01;
+    margin-right: auto;
+    border-bottom-left-radius: 5px;
+    color: #020024;
+}
+
+.input-container {
+    display: flex;
+    padding: 15px;
+    background-color: #010107;
+    border-top: 1px solid #030303;
+}
+
+#user-input {
+    flex: 1;
+    padding: 12px;
+    border: 1px solid #06003b;
+    border-radius: 20px;
+    margin-right: 10px;
+    font-size: 16px;
+}
+
+button {
+    padding: 12px 40px;
+    background-color: #e5ff00;
+    color: rgb(0, 0, 0);
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #000000;
+    color: rgb(255, 255, 255);
+}
+
+.typing-indicator {
+    display: none;
+    font-style: italic;
+    color: #888;
+    margin-bottom: 10px;
+    padding-left: 15px;
+}
+
+/* Make the layout responsive */
+@media (max-width: 768px) {
+    .message {
+        max-width: 85%;
+    }
+}
+
+/* Ensure the page takes up full height */
+html {
+    height: 100%;
+}

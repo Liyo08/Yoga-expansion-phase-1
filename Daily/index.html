@@ -1,0 +1,599 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+    <head>
+        <!-- meta data -->
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+        <!--font-family-->
+		<link href="https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+
+		<link href="https://fonts.googleapis.com/css?family=Rufina:400,700" rel="stylesheet">
+        
+        <!-- title of site -->
+        <title>Zenalign &mdash;Sun salutation </title>
+
+        <!-- For favicon png -->
+		<link rel="shortcut icon" type="image/icon" href="assets/logo/favicon.png"/>
+       
+        <!--font-awesome.min.css-->
+        <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+
+        <!--linear icon css-->
+		<link rel="stylesheet" href="assets/css/linearicons.css">
+
+        <!--flaticon.css-->
+		<link rel="stylesheet" href="assets/css/flaticon.css">
+
+		<!--animate.css-->
+        <link rel="stylesheet" href="assets/css/animate.css">
+
+        <!--owl.carousel.css-->
+        <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+		<link rel="stylesheet" href="assets/css/owl.theme.default.min.css">
+		
+        <!--bootstrap.min.css-->
+        <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+		
+		<!-- bootsnav -->
+		<link rel="stylesheet" href="assets/css/bootsnav.css" >	
+        
+        <!--style.css-->
+        <link rel="stylesheet" href="assets/css/style.css">
+        
+        <!--responsive.css-->
+        <link rel="stylesheet" href="assets/css/responsive.css">
+        
+        <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+		
+        <!--[if lt IE 9]>
+			<script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+			<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
+		<style>
+		body {
+			opacity: 0;
+			transform: translateX(-50px); /* Shift from left instead of bottom */
+			transition: opacity 1s ease-out, transform 1s ease-out;
+			overflow: hidden; /* Hides scrollbar initially */
+		}
+	</style>
+	<style>
+		/* Keyframes for animations */
+	  
+		@keyframes dropFromTop {
+			from {
+				transform: translateY(-50px);
+				opacity: 0;
+			}
+			to {
+				transform: translateY(0);
+				opacity: 1;
+			}
+		}
+		
+		/* Navbar styling */
+		.navbar {
+			
+			background-color: black;
+			color: white;
+			display: flex;
+			align-items: center;
+			padding: 25px 50px;
+			justify-content: flex-start;
+			padding-left: 1000px;
+			height:80px;
+			font-family: 'Poppins', sans-serif;
+			position: fixed;
+			width: 100%;
+			top: 0;
+			left: 0;
+			z-index: 1000;
+			box-shadow: 0px 3px 5px rgba(255, 255, 255, 0.1);
+			
+		}
+		
+		/* Animate logo from left */
+		.navbar .logo {
+			align-items: center;
+			margin-right: 
+			auto;
+			justify-content: flex-start;
+			padding-right:50;
+			font-size: 24px;
+			font-weight: bold;
+			letter-spacing: 2px;
+			transition: color 0.3s ease;
+			
+			animation: slideFromLeft 1s ease-out forwards;
+		}
+		
+		/* Navigation Links */
+		.navbar .nav-links {
+			display: flex;
+			gap: 20px;
+			
+		}
+		
+		/* Animate nav links from top */
+		.navbar .nav-links a {
+			text-decoration: none;
+			color: white;
+			font-size: 15px;
+			font-weight: bold;
+			transition: color 0.3s ease, transform 0.2s;
+			opacity: 0; /* Initially hidden */
+			animation: dropFromTop 0.8s ease-out forwards;
+		}
+		
+		/* Add delay to each nav link for a staggered effect */
+		.navbar .nav-links a:nth-child(1) {
+			animation-delay: 0.2s;
+		}
+		.navbar .nav-links a:nth-child(2) {
+			animation-delay: 0.4s;
+		}
+		.navbar .nav-links a:nth-child(3) {
+			animation-delay: 0.6s;
+		}
+		
+		/* Hover Effects */
+		.navbar .nav-links a:hover {
+			color: yellow;
+			transform: scale(1.1);
+		}
+	
+
+
+			 </style>
+    </head>
+	
+	<body>
+		<!--[if lte IE 9]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+        <![endif]-->
+	
+		<!--welcome-hero start -->
+		
+
+			<!-- top-area Start -->
+		
+			<nav class="navbar">
+				<div class="logo"></div>
+				<div class="nav-links">
+				   <a href="C:\Users\Liyo Tom\Documents\Leo\Materials\S6\Mini Prjct\Yoga Test 19(5,12)extension\index.html">HOME</a>
+				   <a href="C:\Users\Liyo Tom\Documents\Leo\Materials\S6\Mini Prjct\Yoga Test 19(5,12)extension\Yoga Entry page\index.html">YOGA</a>
+				   <a href="C:\Users\Liyo Tom\Documents\Leo\Materials\S6\Mini Prjct\Yoga Test 19(5,12)extension\Entry Page\index1.html">BACK</a>
+				   
+				</div>
+			</nav>
+		<!--featured-cars start -->
+				<div class="featured-cars-content">
+					
+					<div class="row">
+						
+						<div class="col-lg-3 col-md-4 col-sm-6">
+							<div class="single-featured-cars">
+								<div class="featured-img-box">
+									<div class="featured-cars-img">
+										<img src="https://www.fitsri.com/wp-content/uploads/2021/01/prayer-pose-practice-guide-1024x683.jpg" alt="cars">
+									</div>
+									<div class="featured-model-info">
+										<p>
+											First Move
+											<span class="featured-mi-span"> </span> 
+											<span class="featured-hp-span"></span>
+											
+										</p>
+									</div>
+								</div>
+								<div class="featured-cars-txt">
+									
+									<h2><a href="https://www.youtube.com/watch?v=i6WMc217EnU">Pranamasana (Prayer Pose)</a></h2>
+									<h3>Click above ⬆️ </h3>
+									
+									<p>
+										Stand straight with feet together.
+
+Bring your palms together in a prayer position at the chest.
+
+Keep your shoulders relaxed and breathe normally.
+
+This pose helps calm the mind and prepares the body for the sequence.
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-3 col-md-4 col-sm-6">
+							<div class="single-featured-cars">
+								<div class="featured-img-box">
+									<div class="featured-cars-img">
+										<img src="https://cdn.shopify.com/s/files/1/0775/1060/7155/files/Raised_Arms_Pose.jpg?v=1694426360">
+									</div>
+									<div class="featured-model-info">
+										<p>
+											Second Move
+											<span class="featured-mi-span"> </span> 
+											<span class="featured-hp-span"> </span>
+											 
+										</p>
+									</div>
+								</div>
+								<div class="featured-cars-txt">
+									<h2><a href="https://youtu.be/c7r0g-KYh3E?si=ZtAa0TUhRA9FO8Rb">Hastauttanasana (Raised Arms Pose) <span></span></a></h2>
+									<h3>Click above ⬆️</h3>
+									<p>
+										Inhale and raise both arms overhead.
+
+Stretch backward slightly, arching your spine.
+
+Keep the arms close to the ears, and engage your core.
+
+This stretches the abdominal muscles and improves digestion.
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-3 col-md-4 col-sm-6">
+							<div class="single-featured-cars">
+								<div class="featured-img-box">
+									<div class="featured-cars-img">
+										<img src="https://i.ytimg.com/vi/0KzyEgkq7zw/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLAuTjVT0UC_MUesAa4_NlKpRTxqpg">
+									</div>
+									<div class="featured-model-info">
+										<p>
+											Third Move
+											<span class="featured-mi-span"> </span> 
+											<span class="featured-hp-span"> </span>
+											 
+										</p>
+									</div>
+								</div>
+								<div class="featured-cars-txt">
+									<h2><a href="https://youtu.be/goN4rWbQUn4?si=XQ1Oir2GJQlWRE9Y">Padahastasana (Standing Forward Bend) <span></span></a></h2>
+									<h3>Click above ⬆️</h3>
+									<p>
+										Exhale and bend forward from the hips.
+
+Keep your spine straight as you lower your hands to touch the floor (or reach as far as possible).
+
+Try to keep your knees straight.
+
+This stretches the hamstrings, calves, and spine.
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-3 col-md-4 col-sm-6">
+							<div class="single-featured-cars">
+								<div class="featured-img-box">
+									<div class="featured-cars-img">
+										<img src="data:image/jpeg;base64,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" alt="cars">
+									</div>
+									<div class="featured-model-info">
+										<p>
+											Fourth Move
+											<span class="featured-mi-span"> </span> 
+											<span class="featured-hp-span"> </span>
+											 
+										</p>
+									</div>
+								</div>
+								<div class="featured-cars-txt">
+									<h2><a href="https://youtu.be/Alx3Cdzpkns?si=yTV4fXOH8yL7ylfE">Ashwa Sanchalanasana (Equestrian Pose)<span> </span> </a></h2>
+									<h3>Click above ⬆️</h3>
+									<p>
+										Inhale and step your right leg back.
+
+Place your right knee on the floor and keep your left knee bent at a 90-degree angle.
+
+Look up slightly and open the chest.
+
+This strengthens the legs and improves hip flexibility. 
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-lg-3 col-md-4 col-sm-6">
+							<div class="single-featured-cars">
+								<div class="featured-img-box">
+									<div class="featured-cars-img">
+										<img src="https://asmy.org.au/app/uploads/2021/12/Untitled-design-24.jpg" alt="cars">
+									</div>
+									<div class="featured-model-info">
+										<p>
+											Fifth Move
+											<span class="featured-mi-span"></span> 
+											<span class="featured-hp-span"> </span>
+											 
+										</p>
+									</div>
+								</div>
+								<div class="featured-cars-txt">
+									<h2><a href="https://youtu.be/pvIjsG5Svck?si=pACgviajZiht2M0n"> Dandasana (Plank Pose) <span></span></a></h2>
+									<h3>Click above ⬆️</h3>
+									<p>
+										Exhale and step your left leg back to join the right.
+
+Keep the body in a straight line from head to heels.
+
+Engage your core and hold the position.
+
+This strengthens the arms, shoulders, and core. 
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-3 col-md-4 col-sm-6">
+							<div class="single-featured-cars">
+								<div class="featured-img-box">
+									<div class="featured-cars-img">
+										<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQU9o2VaTHRy9IabjD3qiD5lOyLcfd6KOqCHQ&s" alt="cars">
+									</div>
+									<div class="featured-model-info">
+										<p>
+											Sixth Move
+											<span class="featured-mi-span"> </span> 
+											<span class="featured-hp-span"> </span>
+											
+										</p>
+									</div>
+								</div>
+								<div class="featured-cars-txt">
+									<h2><a href="https://youtu.be/M6rqwiO5wY4?si=aRZm0paLtvEquazV"> Ashtanga Namaskara (Eight-Limbed Pose)
+										<span></span> </a></h2>
+									<h3>Click above ⬆️</h3>
+									<p>
+										Exhale and lower the body, touching the chin, chest, hands, knees, and toes on the floor while keeping the hips slightly raised.
+
+Keep elbows close to the body.
+
+This increases flexibility and prepares the body for deeper backbends.
+
+
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-3 col-md-4 col-sm-6">
+							<div class="single-featured-cars">
+								<div class="featured-img-box">
+									<div class="featured-cars-img">
+										<img src="https://media.istockphoto.com/id/1134841010/photo/young-woman-practicing-yoga-lying-in-cobra-pose-bhujangasana.jpg?s=612x612&w=0&k=20&c=DxJpmMn1B-_6se-OpqwpvfOI9yE3NOCWUVg855yeHzU=" alt="cars">
+									</div>
+									<div class="featured-model-info">
+										<p>
+											Seventh Move
+											<span class="featured-mi-span"> </span> 
+											<span class="featured-hp-span"> </span>
+											 
+										</p>
+									</div>
+								</div>
+								<div class="featured-cars-txt">
+									<h2><a href="https://youtu.be/fOdrW7nf9gw?si=yqYduYgp44jMWQRu"><span>Bhujangasana (Cobra Pose)</span></a></h2>
+									<h3>Click above ⬆️</h3>
+									<p>
+										Inhale and press your hands into the ground, lifting the chest.
+
+Keep elbows slightly bent and shoulders away from the ears.
+
+Look up and stretch the back.
+
+This strengthens the spine and opens the chest. 
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-3 col-md-4 col-sm-6">
+							<div class="single-featured-cars">
+								<div class="featured-img-box">
+									<div class="featured-cars-img">
+										<img src="https://media.istockphoto.com/id/1336876709/photo/calm-of-beautiful-attractive-asian-woman-practice-yoga-downward-facing-dog-or-yoga-adho-mukha.jpg?s=612x612&w=0&k=20&c=qVnJOgtB_kFZ2FFdvig5K131FqQcBWg3e-dofmu5MP8=
+										" alt="cars">
+									</div>
+									<div class="featured-model-info">
+										<p>
+											Eight Move
+											<span class="featured-mi-span"> </span> 
+											<span class="featured-hp-span"> </span>
+											 
+										</p>
+									</div>
+								</div>
+								<div class="featured-cars-txt">
+									<h2><a href="https://youtu.be/EC7RGJ975iM?si=GZf-ByVof5QG9JyX">Adho Mukha Svanasana (Downward-Facing Dog) <span> </span></a></h2>
+									<h3>Click above ⬆️</h3>
+									<p>
+										Exhale and lift your hips up, straightening your legs.
+
+Keep your hands and feet firmly on the ground.
+
+Try to push the heels toward the floor.
+
+This strengthens the arms and stretches the back and hamstrings.
+
+
+									</p>
+								</div>
+							</div>
+						</div>
+						
+					</div>
+				</div>
+			</div><!--/.container-->
+
+		</section><!--/.featured-cars-->
+		<!--featured-cars end -->
+
+		<!-- clients-say strat -->
+		 
+		<div class="col-lg-3 col-md-4 col-sm-6">
+			<div class="single-featured-cars">
+				<div class="featured-img-box">
+					<div class="featured-cars-img">
+						<img src="https://fitsri.com/wp-content/uploads/2020/12/Ashwa-Sanchalanasana-1024x683.jpg"
+						alt="cars">
+					</div>
+					<div class="featured-model-info">
+						<p>
+							Ninth Move
+							<span class="featured-mi-span"> </span> 
+							<span class="featured-hp-span"> </span>
+							 
+						</p>
+					</div>
+				</div>
+				<div class="featured-cars-txt">
+					<h2><a href="https://youtu.be/0MocS7WERnM?si=1pXAuzvs9meGUumO">Ashwa Sanchalanasana (Equestrian Pose)-> Left Leg <span> </span></a></h2>
+					<h3>Click above ⬆️</h3>
+					<p>
+						Inhale and step the right foot forward (same as Step 4, but with the opposite leg).
+
+Keep the left knee on the ground and look up.
+
+This improves flexibility and balance.
+
+
+					</p>
+				</div>
+			</div>
+		</div><div class="col-lg-3 col-md-4 col-sm-6">
+			<div class="single-featured-cars">
+				<div class="featured-img-box">
+					<div class="featured-cars-img">
+						<img src="https://i.ytimg.com/vi/0KzyEgkq7zw/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLAuTjVT0UC_MUesAa4_NlKpRTxqpg
+						" alt="cars">
+					</div>
+					<div class="featured-model-info">
+						<p>
+							Tenth Move
+							<span class="featured-mi-span"> </span> 
+							<span class="featured-hp-span"> </span>
+							 
+						</p>
+					</div>
+				</div>
+				<div class="featured-cars-txt">
+					<h2><a href="https://youtu.be/goN4rWbQUn4?si=XQ1Oir2GJQlWRE9Y">Padahastasana (Standing Forward Bend) <span> </span></a></h2>
+					<h3>Click above ⬆️</h3>
+					<p>
+						Exhale and bring the left foot forward to join the right.
+
+Keep your hands near your feet and head close to the knees.
+
+This stretches the hamstrings and relaxes the spine.
+
+
+					</p>
+				</div>
+			</div>
+		</div><div class="col-lg-3 col-md-4 col-sm-6">
+			<div class="single-featured-cars">
+				<div class="featured-img-box">
+					<div class="featured-cars-img">
+						<img src="https://cdn.shopify.com/s/files/1/0775/1060/7155/files/Raised_Arms_Pose.jpg?v=1694426360
+						" alt="cars">
+					</div>
+					<div class="featured-model-info">
+						<p>
+							Eleventh Move
+							<span class="featured-mi-span"> </span> 
+							<span class="featured-hp-span"> </span>
+							 
+						</p>
+					</div>
+				</div>
+				<div class="featured-cars-txt">
+					<h2><a href="https://youtu.be/c7r0g-KYh3E?si=ZtAa0TUhRA9FO8Rb">Hastauttanasana (Raised Arms Pose)<span> </span></a></h2>
+					<h3>Click above ⬆️</h3>
+					<p>
+						Inhale and rise up, raising your arms overhead.
+
+Stretch backward slightly, keeping the arms close to the ears.
+
+Engage your core and lengthen the spine.
+
+
+					</p>
+				</div>
+			</div>
+		</div><div class="col-lg-3 col-md-4 col-sm-6">
+			<div class="single-featured-cars">
+				<div class="featured-img-box">
+					<div class="featured-cars-img">
+						<img src="https://www.fitsri.com/wp-content/uploads/2021/01/prayer-pose-practice-guide-1024x683.jpg
+						" alt="cars">
+					</div>
+					<div class="featured-model-info">
+						<p>
+							Twelth Move
+							<span class="featured-mi-span"> </span> 
+							<span class="featured-hp-span"> </span>
+							 
+						</p>
+					</div>
+				</div>
+				<div class="featured-cars-txt">
+					<h2><a href="https://youtu.be/G2RjIUa9crA?si=7FX3kdc69CrmQuBZ">Pranamasana (Prayer Pose) <span> </span></a></h2>
+					<h3>Click above ⬆️</h3>
+					<p>
+						Exhale and bring your palms together in a prayer position at your chest.
+
+Stand tall and breathe deeply.
+
+This helps relax the body and brings awareness to the breath.
+
+
+
+
+					</p>
+				</div>
+			</div>
+		</div>
+
+			<div id="scroll-Top">
+				<div class="return-to-top">
+					<i class="fa fa-angle-up " id="scroll-top" data-toggle="tooltip" data-placement="top" title="" data-original-title="Back to Top" aria-hidden="true"></i>
+				</div>
+				
+			</div><!--/.scroll-Top-->
+			
+        </footer><!--/.contact-->
+		<!--contact end-->
+
+<script>window.onload = function () {
+    document.body.style.opacity = "1";
+    document.body.style.transform = "translateX(0)"; /* Moves content to normal position */
+};
+</script>
+		
+		<!-- Include all js compiled plugins (below), or include individual files as needed -->
+
+		<script src="assets/js/jquery.js"></script>
+        
+        <!--modernizr.min.js-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+		
+		<!--bootstrap.min.js-->
+        <script src="assets/js/bootstrap.min.js"></script>
+		
+		<!-- bootsnav js -->
+		<script src="assets/js/bootsnav.js"></script>
+
+		<!--owl.carousel.js-->
+        <script src="assets/js/owl.carousel.min.js"></script>
+
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+
+        <!--Custom JS-->
+        
+    </body>
+	
+</html>
