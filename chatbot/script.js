@@ -37,7 +37,7 @@ const knowledgeBase = {
 "what are the best drinks for weight gain": ["Smoothies, protein shakes, and whole milk are great calorie-dense drinks."],
 
 // 🌿 Diet - Weight Loss
-"how to lose weight": ["For weight loss, focus on a calorie deficit, eat whole foods, and exercise regularly."],
+"how to loss weight": ["For weight loss, focus on a calorie deficit, eat whole foods, and exercise regularly."],
 "best foods for weight loss": ["Opt for lean proteins, leafy greens, whole grains, and fiber-rich foods to stay full longer."],
 "weight loss tips": ["Reduce sugar intake, drink more water, exercise regularly, and get enough sleep."],
 "is keto good for weight loss": ["The keto diet can be effective for weight loss, but consult a nutritionist before starting."],
